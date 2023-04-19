@@ -19,7 +19,7 @@ namespace Számlavezetés
 
         public Tetel (string csvSor)
         {
-            string[] mezok = csvSor.Split(',');
+            string[] mezok = csvSor.Split(';');
 
             this.id = int.Parse(mezok[0]);
             this.datum = Convert.ToDateTime(mezok[1]);
