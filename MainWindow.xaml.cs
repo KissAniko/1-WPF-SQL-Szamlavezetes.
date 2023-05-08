@@ -34,7 +34,7 @@ namespace Számlavezetés
             String csvsor = $"{txtID.Text}; {dpDatum}; {txtOsszeg.Text}; {txtPartner.Text}; {txtfoKategoria.Text}; {txtalKategoria.Text}";
             Tetel ujTetel = new Tetel (csvsor) ;
             tetelek.Add(ujTetel) ;
-            lbLista.Items.Refresh();   // frissítés
+            lbLista.Items.Refresh() ;   // frissítés
         }
        
         private void btnElment_Click(object sender, RoutedEventArgs e)
